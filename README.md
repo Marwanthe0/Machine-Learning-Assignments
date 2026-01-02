@@ -46,11 +46,11 @@ Predict medical insurance charges based on patient demographics and health attri
 Predict loan approval (binary: 0=rejected, 1=approved) based on applicant profile.
 
 ### Models Implemented
-1. **Logistic Regression** (L2 penalty, C=1.0)
-2. **Support Vector Machine** (RBF kernel, C=1, gamma='scale')
-3. **Naive Bayes** (GaussianNB for continuous features)
-4. **K-Nearest Neighbors** (best k=25, distance-weighted)
-5. **Random Forest Classifier** (100 estimators, max_depth=5) ⭐⭐⭐ **BEST**
+1. **Logistic Regression** (L2 penalty, C=1.0) — Test Accuracy: 0.8983
+2. **Support Vector Machine** (RBF kernel, C=1, gamma='scale') — Test Accuracy: 0.9178
+3. **Naive Bayes** (GaussianNB for continuous features) — Test Accuracy: 0.7347
+4. **K-Nearest Neighbors** (best k=25, distance-weighted) — Test Accuracy: 0.9002
+5. **Random Forest Classifier** (100 estimators, max_depth=5) ⭐⭐⭐ **BEST** — Test Accuracy: 0.9160
 
 ### Dataset: `loan_data.csv`
 - **Rows:** ~10,000+ | **Columns:** Multiple features + 1 binary target
@@ -98,11 +98,11 @@ Predict loan approval (binary: 0=rejected, 1=approved) based on applicant profil
 | Polynomial Regression | Regression | 0.780 | 4254 |
 | SVR (RBF tuned) | Regression | 0.849 | 1803 |
 | **Random Forest** | **Regression** | **0.865** | **2746** ⭐ |
-| Logistic Regression | Classification | ~0.88 | — |
-| SVM (RBF) | Classification | ~0.87 | — |
-| Naive Bayes (Gaussian) | Classification | ~0.85 | — |
-| KNN (k=25) | Classification | ~0.88 | — |
-| **Random Forest** | **Classification** | **~0.91** | — ⭐ |
+| Logistic Regression | Classification | 0.8983 | — |
+| SVM (RBF) | Classification | 0.9178 | — |
+| Naive Bayes (Gaussian) | Classification | 0.7347 | — |
+| KNN (k=25) | Classification | 0.9002 | — |
+| **Random Forest** | **Classification** | **0.9160** | — ⭐ |
 
 ---
 
